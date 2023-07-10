@@ -1,20 +1,27 @@
-from typing import Annotated
 from fastapi import FastAPI, Request,Form
-from utilis import send_message
+from utilis import send_message, create_image
 from dotenv import load_dotenv
+import logging
+
+
 load_dotenv()
 
-app = FastAPI()
+app = FastAPI(debug=True)
 
+# Set up logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 @app.post("/message")
 async def message(request: Request):
     try:
         form_data = await request.json()
-        m = form_data["text"]
-        z = f"{m}dddd"
-        send_message(z)
+        message = form_data["text"]
+
+        url_image = create_image(message)
+        send_message(url_image)
+        logger.info("Message sent")
     except Exception as e:
-        print("ddfd")
+        logger.error("Error sending message")
 
     return ""
