@@ -26,10 +26,10 @@ This project implements a captivating WhatsApp chatbot that empowers users to ge
 3. **Configuration:**
    - Create a `.env` file at the root of the project.
    - Add environment variables:
-      - OPENAI_API_KEY="<your-open-ai-api-key>"
-      - VONAGE_API_KEY="<your-vonage-api-key>"
-      - VONAGE_API_SECRET="<your-vonage-api-secret>"
-      - VONAGE_NUMBER="<your-vonage-number>"
-      - WHATSAPP_NUMBER="<your-whatsapp-number>" (replace with your Vonage WhatsApp sandbox number)
+      - `OPENAI_API_KEY="<your-open-ai-api-key>"`
+      - `VONAGE_API_KEY="<your-vonage-api-key>"`
+      - `VONAGE_API_SECRET="<your-vonage-api-secret>"`
+      - `VONAGE_NUMBER="<your-vonage-number>"`
+      - `WHATSAPP_NUMBER="<your-whatsapp-number>"` (replace with your Vonage WhatsApp sandbox number)
 4. **Run the application:**
    - Execute the script: `uvicorn main:app --reload`
