@@ -1,7 +1,5 @@
 # WhatsApp AI Text-to-Image Chatbot
 
-**Title:** WhatsApp AI Text-to-Image Chatbot with Vonage and OpenAI DALL-E 2
-
 **Description:**
 
 This project implements a captivating WhatsApp chatbot that empowers users to generate unique images based on their textual descriptions. It seamlessly integrates the following powerful technologies:
