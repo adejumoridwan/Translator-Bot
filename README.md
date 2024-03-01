@@ -21,7 +21,7 @@ This project implements a captivating WhatsApp chatbot that empowers users to ge
    - Python 3.x and required libraries (e.g., `vonage`, `openai`)
 2. **Installation:**
    - Clone the repository: `git clone https://github.com/adejumoridwan/WhatsApp-AI-Text-To-Image-Chatbot.git`
-   - Navigate to the project directory: `cd whatsapp-ai-image-generator`
+   - Navigate to the project directory: `cd whatsapp-ai-text-to-image-generator`
    - Install dependencies: `pip install -r requirements.txt`
 3. **Configuration:**
    - Create a `.env` file at the root of the project.
